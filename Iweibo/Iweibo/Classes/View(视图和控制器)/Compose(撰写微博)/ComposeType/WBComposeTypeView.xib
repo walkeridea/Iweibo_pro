@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zVb-Ys-BBO" customClass="WBComposeTypeView" customModule="Iweibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNR-Q5-rXk">
+                    <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gIm-HL-ddb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="734"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compose_slogan" translatesAutoresizingMaskIntoConstraints="NO" id="UK2-19-rQt">
+                                <rect key="frame" x="110" y="100" width="154" height="48"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oX6-dw-cCb">
+                                <rect key="frame" x="0.0" y="416" width="375" height="224"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="Kjn-P0-dQU"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QF-Tn-cX6">
+                                <rect key="frame" x="0.0" y="690" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lh8-Nv-pzu" userLabel="关闭按钮">
+                                        <rect key="frame" x="174.66666666666666" y="8.6666666666666288" width="26" height="26"/>
+                                        <state key="normal" image="tabbar_compose_background_icon_close"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jv8-h9-FSC" userLabel="返回按钮">
+                                        <rect key="frame" x="174.66666666666666" y="9" width="26" height="26"/>
+                                        <state key="normal" image="tabbar_compose_background_icon_return"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lh8-Nv-pzu" firstAttribute="centerX" secondItem="6QF-Tn-cX6" secondAttribute="centerX" id="Rex-zH-e76"/>
+                                    <constraint firstItem="Jv8-h9-FSC" firstAttribute="centerY" secondItem="6QF-Tn-cX6" secondAttribute="centerY" id="bkt-5V-aLP"/>
+                                    <constraint firstAttribute="height" constant="44" id="eTw-BB-Ppo"/>
+                                    <constraint firstItem="lh8-Nv-pzu" firstAttribute="centerY" secondItem="6QF-Tn-cX6" secondAttribute="centerY" id="mh1-XW-vZz"/>
+                                    <constraint firstItem="Jv8-h9-FSC" firstAttribute="centerX" secondItem="6QF-Tn-cX6" secondAttribute="centerX" id="ydL-ul-UFg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UK2-19-rQt" firstAttribute="centerX" secondItem="gIm-HL-ddb" secondAttribute="centerX" id="3F1-OS-ffv"/>
+                            <constraint firstItem="6QF-Tn-cX6" firstAttribute="top" secondItem="oX6-dw-cCb" secondAttribute="bottom" constant="50" id="N8O-Eo-UNr"/>
+                            <constraint firstItem="UK2-19-rQt" firstAttribute="top" secondItem="gIm-HL-ddb" secondAttribute="top" constant="100" id="bGy-OI-ayt"/>
+                            <constraint firstAttribute="trailing" secondItem="oX6-dw-cCb" secondAttribute="trailing" id="da9-zq-VR4"/>
+                            <constraint firstItem="6QF-Tn-cX6" firstAttribute="leading" secondItem="gIm-HL-ddb" secondAttribute="leading" id="jMr-EE-R34"/>
+                            <constraint firstAttribute="trailing" secondItem="6QF-Tn-cX6" secondAttribute="trailing" id="ma9-hz-P4m"/>
+                            <constraint firstAttribute="bottom" secondItem="6QF-Tn-cX6" secondAttribute="bottom" id="op2-QR-QUP"/>
+                            <constraint firstItem="oX6-dw-cCb" firstAttribute="leading" secondItem="gIm-HL-ddb" secondAttribute="leading" id="zSJ-T6-ttR"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="BNR-Q5-rXk" firstAttribute="top" secondItem="5XI-MN-KHC" secondAttribute="top" id="FpY-8L-Riq"/>
+                <constraint firstItem="5XI-MN-KHC" firstAttribute="bottom" secondItem="BNR-Q5-rXk" secondAttribute="bottom" id="LhF-x1-drv"/>
+                <constraint firstItem="5XI-MN-KHC" firstAttribute="trailing" secondItem="BNR-Q5-rXk" secondAttribute="trailing" id="bKs-sZ-oOq"/>
+                <constraint firstItem="BNR-Q5-rXk" firstAttribute="leading" secondItem="5XI-MN-KHC" secondAttribute="leading" id="qBF-Vj-3si"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="5XI-MN-KHC"/>
+            <connections>
+                <outlet property="closeButtonCenterXCons" destination="Rex-zH-e76" id="3Av-Xf-690"/>
+                <outlet property="returnButton" destination="Jv8-h9-FSC" id="Ihe-u8-qdg"/>
+                <outlet property="returnButtonCenterXCons" destination="ydL-ul-UFg" id="aAA-tp-bP4"/>
+                <outlet property="scrollView" destination="oX6-dw-cCb" id="E4B-UY-P4C"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="compose_slogan" width="154" height="48"/>
+        <image name="tabbar_compose_background_icon_close" width="26" height="26"/>
+        <image name="tabbar_compose_background_icon_return" width="26" height="26"/>
+    </resources>
+</document>
